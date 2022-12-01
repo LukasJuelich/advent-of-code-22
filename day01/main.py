@@ -1,12 +1,12 @@
 most_calories = [0, 0, 0]
 current_calories = 0
 
-def calcTotalOfArray(array):
-    sum = 0
+def calc_total_of_array(array):
+    total = 0
     for element in array:
-        sum += element
+        total += element
     
-    return sum
+    return total
 
 with open("input.txt", "r") as file:
     for line in file:
@@ -22,4 +22,4 @@ with open("input.txt", "r") as file:
             current_calories = 0
 
     print(most_calories)
-    print(calcTotalOfArray(most_calories))
+    print(calc_total_of_array(most_calories))
